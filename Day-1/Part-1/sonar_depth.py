@@ -1,5 +1,5 @@
-input_filepath='./input/input.txt'
-sample_filepath='./input/sample.txt'
+input_filepath='../input/input.txt'
+sample_filepath='../input/sample.txt'
 
 def get_incremental_depth(depth):
 	count=0
@@ -14,11 +14,12 @@ def get_incremental_depth(depth):
 				prev=number
 			else:
 				prev=number
+
 	return count	
 	
 
 def main():
-	count = get_incremental_depth(input_filepath)
+	count=get_incremental_depth(input_filepath)
 	print(f"Number of times depth measurement increased is {count}")
 
 
